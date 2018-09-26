@@ -1,0 +1,77 @@
+def fastfood():
+    print("~~"*20)
+    print("~"*10,"Sam Dosa Corner","~"*10)
+    print("Select your option")
+    print("1--> Sada Dosa @ Rs.80")
+    print("2--> Masala Dosa @ Rs.120")
+    print("3--> Onion Dosa @ Rs.100")
+    print("4--> Paper Dosa @ Rs.120")
+    print("5--> Chinese Dosa @ Rs.150")
+    print("6--> Cheese Masala Dosa @ Rs.180")
+    subtotal = 0
+    cgst = 0
+    sgst = 0
+    total = 0
+    ch =int(input("Enter your Choice :"))
+    d= int(input("Enter no. of quantity :"))
+    if ch == 1:
+             subtotal = d*80
+             cgst = subtotal*0.05
+             sgst = subtotal*0.05
+    elif ch == 2:
+         subtotal = d*120
+         cgst = subtotal*0.05
+         sgst = subtotal*0.05
+    elif ch == 3:
+             subtotal = d*100
+             cgst = subtotal*0.05
+             sgst = subtotal*0.05
+    elif ch == 4:
+             subtotal = d*120
+             cgst = subtotal*0.05
+             sgst = subtotal*0.05
+    elif ch == 5:
+             subtotal = d*150
+             cgst = subtotal*0.05
+             sgst = subtotal*0.05
+    elif ch == 6:
+             subtotal = d*180
+             cgst = subtotal*0.05
+             sgst = subtotal*0.05
+    else:
+        print("ENTERED CHOICE NOT AVAILABLE!   PLEASE TRY AGAIN")
+        fastfood()
+    total = subtotal+cgst+sgst
+    print()
+    print("~~"*10,"BILL","~~"*10)
+    print("Subtotal:",subtotal)
+    print("Total: ",total)
+    print("cgst:",cgst)
+    print("sgst:",sgst)
+   
+def feedback():
+    print("~~"*20)
+    print("~"*10,"GIVE YOUR FEED BACK","~"*10)
+    print("Select your option")
+    print("A--> EXCELLENT SERVICE")
+    print("B--> GOOD SERVICE")
+    print("C--> CAN DO BETTER")
+    print("D--> BAD SEVICE")
+    ch =input("Enter your Choice :")
+    if ch=="A":
+        print("EXCELLENT SERVICE")
+        print("~~"*10,"*****THANKYOU! FOR YOUR FEEDBACK :) ***** VISIT AGAIN*****","~~"*10)
+    elif ch=="B":
+        print(" GOOD SERVICE")
+        print("~~"*10,"*****THANKYOU! FOR YOUR FEEDBACK :) *****  VISIT AGAIN*****","~~"*10)
+    elif ch=="C":
+        print(" CAN DO BETTER")
+        print("~~"*5,"*****THANKYOU! FOR YOUR FEEDBACK NEXT TIME WE WILL DO BETTER :) *****  VISIT AGAIN*****","~~"*5)
+    elif ch=="D":
+        print(" BAD SEVICE")
+        print("~"*5,"*****THANKYOU! FOR YOUR FEEDBACK NEXT TIME WE WILL DO BETTER :) *****  VISIT AGAIN*****","~"*5)
+    else:
+        print("ENTERED CHOICE NOT AVAILABLE!   PLEASE TRY AGAIN")
+        
+fastfood()
+feedback()
